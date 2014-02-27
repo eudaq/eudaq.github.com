@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Changelog and Versions</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="Changelog and Versions"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-02-27 16:22:11 CET"/>
+<meta name="author" content="hperrey"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Changelog and Versions</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Version 1.3 (under development)</a>
+<ul>
+<li><a href="#sec-1-1">New user-provided producers/converters:</a></li>
+<li><a href="#sec-1-2">Changes to existing Producers/converters:</a></li>
+<li><a href="#sec-1-3">New Tools</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">Version 1.2</a>
+<ul>
+<li><a href="#sec-2-1">CMake build system</a></li>
+<li><a href="#sec-2-2">Restructuring of directory hierarchy</a></li>
+<li><a href="#sec-2-3">Cleanup of repository</a></li>
+<li><a href="#sec-2-4">New user-provided producers:</a></li>
+<li><a href="#sec-2-5">NativeReader Marlin library for LCIO conversion</a></li>
+<li><a href="#sec-2-6">Changes to existing Producers:</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">Version 1.1</a>
+<ul>
+<li><a href="#sec-3-1">New features and change log</a></li>
+<li><a href="#sec-3-2">Notes on updating</a></li>
+<li><a href="#sec-3-3">Known Issues</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">Version 1.0</a>
+<ul>
+<li><a href="#sec-4-1">New features and change log</a></li>
+<li><a href="#sec-4-2">Known issues</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">Version 1.3 (under development)</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1">New user-provided producers/converters:</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li>miniTLU (Francesco Crescioli)
+</li>
+<li>MuPix converter (Moritz Kiehn)
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2">Changes to existing Producers/converters:</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<ul>
+<li>updated APIX FEI4 converter
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3">New Tools</h3>
+<div class="outline-text-3" id="text-1-3">
+
+
+</div>
+
+<div id="outline-container-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1">FileChecker</h4>
+<div class="outline-text-4" id="text-1-3-1">
+
+<p>    a small utility to check raw data files (see manual for a description)
+</p></div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">Version 1.2</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1">CMake build system</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<ul>
+<li>Multiplatform build system
+</li>
+<li>out-of-source builds
+</li>
+<li>Builds with gcc on Linux (e.g. 4.7 on Ubuntu 12.04), Clang on OSX (e.g. 4.2 on OSX 10.8), and MSVC on Windows (MSVC 12 on Windows 7, 32bit)
+</li>
+<li>recommend CMake 2.8.12, but should work even with CMake 2.6
+</li>
+<li>see updated install instructions in README or the manual
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2">Restructuring of directory hierarchy</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<ul>
+<li>all producers are stored in separate directory
+</li>
+<li>central library is located separately from executables and by default installed in ./lib
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3">Cleanup of repository</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<p>   (almost) no binary files are now distributed with the code:
+</p><ul>
+<li>no windows drivers (pthreads, libusb)
+</li>
+<li>no Mimosa26 DAQ labview projects
+</li>
+<li>no MS Visual Studio files or precompiled W32 binaries
+</li>
+<li>manual is no longer provided as pdf but only in source (and can be downloaded from the homepage)
+</li>
+<li>no ZestSC1 driver files (need to be downloaded from AFS, see instructions for installation in README.md)
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-4" class="outline-3">
+<h3 id="sec-2-4">New user-provided producers:</h3>
+<div class="outline-text-3" id="text-2-4">
+
+<ul>
+<li>Explorer-1 (Felix Reidt)
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-5" class="outline-3">
+<h3 id="sec-2-5">NativeReader Marlin library for LCIO conversion</h3>
+<div class="outline-text-3" id="text-2-5">
+
+<ul>
+<li>used to interface with EUTelescope analysis framework for data conversion from RAW into LCIO format
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-6" class="outline-3">
+<h3 id="sec-2-6">Changes to existing Producers:</h3>
+<div class="outline-text-3" id="text-2-6">
+
+
+</div>
+
+<div id="outline-container-2-6-1" class="outline-4">
+<h4 id="sec-2-6-1">TLU</h4>
+<div class="outline-text-4" id="text-2-6-1">
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">Version 1.1</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1">New features and change log</h3>
+<div class="outline-text-3" id="text-3-1">
+
+
+</div>
+
+<div id="outline-container-3-1-1" class="outline-4">
+<h4 id="sec-3-1-1">General</h4>
+<div class="outline-text-4" id="text-3-1-1">
+
+<ul>
+<li>EUDAQ main components compile and run under Windows 7 now (VS 2012), executables are included
+</li>
+<li>improved stability
+</li>
+<li>data collector can now run on different PC from run control
+</li>
+<li>added Mimosa32 producer (by Ilaria Aimo)
+</li>
+<li>there are now two FEI4B converter plugins (USBPIX/RCE), see notes on updating
+</li>
+<li>updated TimepixConverterPlugin (by Mathieu Benoit)
+</li>
+<li>now hosted on github
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-3-1-2" class="outline-4">
+<h4 id="sec-3-1-2">1.1.0 (15.08.2013)</h4>
+<div class="outline-text-4" id="text-3-1-2">
+
+<ul>
+<li>improved stability: better exception handling of run control when log collector fails
+</li>
+<li>improved stability: run control GUI application properly catches exceptions
+</li>
+<li>reduced verbosity of online monitor
+</li>
+<li>added some debugging facilities for low-level methods in TransportTCP.cc
+</li>
+<li>NI producer: NI PCs address does not need to be in system's host file any more
+</li>
+<li>data and logs folders are now present already in the repository; can be replaced e.g. with symlink by the user
+</li>
+<li>fixed compilation on gcc 4.7
+</li>
+<li>fixed build warnings
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2">Notes on updating</h3>
+<div class="outline-text-3" id="text-3-2">
+
+
+</div>
+
+<div id="outline-container-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1">USBPIX/RCE systems</h4>
+<div class="outline-text-4" id="text-3-2-1">
+
+<p>    breaking backward compatibility with data taken with RCE system of
+    FEI4B modules (tagged USBPIXI4B before today or with eudaq
+    v01-00-00) from now on, there are 2 FEI4B converter plugins for
+    USBPIX system (USBpixI4BConverterPlugin) and for RCE system
+    (RCEI4ConverterPlugin)
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3-3" class="outline-3">
+<h3 id="sec-3-3">Known Issues</h3>
+<div class="outline-text-3" id="text-3-3">
+
+<p>   For up-to-date details, check <a href="https://github.com/eudaq/eudaq/issues">https://github.com/eudaq/eudaq/issues</a>
+</p>
+</div>
+
+<div id="outline-container-3-3-1" class="outline-4">
+<h4 id="sec-3-3-1">issue #1: Instabilities during data-taking</h4>
+<div class="outline-text-4" id="text-3-3-1">
+
+<ul>
+<li>some improvements since version 1.0 but no long term experience yet
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-3-3-2" class="outline-4">
+<h4 id="sec-3-3-2">issue #2: Online monitor does not yet work on Windows</h4>
+<div class="outline-text-4" id="text-3-3-2">
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4">Version 1.0</h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1">New features and change log</h3>
+<div class="outline-text-3" id="text-4-1">
+
+
+</div>
+
+<div id="outline-container-4-1-1" class="outline-4">
+<h4 id="sec-4-1-1">General</h4>
+<div class="outline-text-4" id="text-4-1-1">
+
+<ul>
+<li>first 'release': snapshot of development until April 2013
+</li>
+<li>EUDAQ developed since 2007 and in successful operation with various devices for years!
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-1-2" class="outline-4">
+<h4 id="sec-4-1-2">1.0.3</h4>
+<div class="outline-text-4" id="text-4-1-2">
+
+<ul>
+<li>change of default control voltage for PMTs, now it's 800 mV
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-1-3" class="outline-4">
+<h4 id="sec-4-1-3">1.0.2</h4>
+<div class="outline-text-4" id="text-4-1-3">
+
+<ul>
+<li>changes in USBpixI4BConverterPlugin and RCEI4BConverterPlugin
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-1-4" class="outline-4">
+<h4 id="sec-4-1-4">1.0.1</h4>
+<div class="outline-text-4" id="text-4-1-4">
+
+<ul>
+<li>changes to FEI4B converter plugin.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-1-5" class="outline-4">
+<h4 id="sec-4-1-5">1.0.0</h4>
+<div class="outline-text-4" id="text-4-1-5">
+
+<ul>
+<li>minor clean-up, first 'versioned' release
+</li>
+<li>online monitor no longer defaults to simple tracking for the correlation plots
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2">Known issues</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<p>   For up-to-date details, check <a href="https://github.com/eudaq/eudaq/issues">https://github.com/eudaq/eudaq/issues</a>
+</p>
+</div>
+
+<div id="outline-container-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1">Instabilities during data-taking</h4>
+<div class="outline-text-4" id="text-4-2-1">
+
+<ul>
+<li>euRun crashes, sometimes with uncaught exceptions, sometimes with segfaults
+</li>
+<li>crashes occur 'regularly', on some systems every hour or others a couple of times per day
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-02-27 16:22:11 CET</p>
+<p class="author">Author: hperrey</p>
+<p class="creator">Org version 7.8.11 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
