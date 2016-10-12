@@ -47,28 +47,30 @@ make install
 <h3>
 <a name="detailed-installation-instructions" class="anchor" href="#detailed-installation-instructions"><span class="octicon octicon-link"></span></a>Detailed Installation</h3>
 
-<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v1.6.0/README.md">README.md</a> included in the source code or in the the user's manual (see below).</p>
+<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v1.6.0/README.md">README.md</a> included in the source code or in chpater 3 of the EUDAQ user manual (see below).</p>
 
 <h3>
-<a name="users-manual" class="anchor" href="#users-manual"><span class="octicon octicon-link"></span></a>User's Manual</h3>
+<a name="users-manual" class="anchor" href="#users-manual"><span class="octicon octicon-link"></span></a>User Manual</h3>
 
-<p>You can <a href="http://eudaq.github.io/manual/EUDAQUserManual.pdf">download the user's manual</a> or generate the manual from the LaTeX sources included in EUDAQ:</p>
+<p>You can generate the pdf manual from the LaTeX sources included in EUDAQ:</p>
 <pre><code>cd build
 cmake -DBUILD_manual=ON ..
 make pdf
 </code></pre>
-<p>The manual can then be found in <code>./doc/manual/EUDAQUserManual.pdf</code></p>
-
+<p>Afterwards, the manual can then be found in <code>eudaq/build/doc/manual/EUDAQUserManual.pdf</code></p>
+<p>Find here a compiled version <a href="http://eudaq.github.io/manual/EUDAQUserManual.pdf">EUDAQ user manual</a>.</p>
+        
 <h3>
 <a name="doxygen-source-code-documentation" class="anchor" href="#doxygen-source-code-documentation"><span class="octicon octicon-link"></span></a>Doxygen Source Code Documentation</h3>
 
-<p>The doxygen documentation of the EUDAQ source code <a href="http://eudaq.github.io/doxygen/index.html">can be found online</a> or generated from the source code itself:</p>
+<p>You can generate a html doxygen documentation from the source code itself, which describes the used namespaces, classes and file hierarchy of the EUDAQ code:</p>
 <pre><code>cd build
 cmake ..
 make doxygen
 </code></pre>
-<p>The resulting HTML files are stored in <code>../doc/doxygen/html</code>.</p>
-
+<p>The resulting HTML files are stored in <code>eudaq/doc/doxygen/html</code>.</p>
+<p>Find here the <a href="http://eudaq.github.io/doxygen/index.html">code documentation </a>.</p>
+        
 <h3>
 <a name="support-and-bug-tracker" class="anchor" href="#support-and-bug-tracker"><span class="octicon octicon-link"></span></a>Support and Bug Tracker</h3>
 
