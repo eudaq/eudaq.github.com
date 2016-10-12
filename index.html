@@ -28,15 +28,17 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="basic-installation-instructions" class="anchor" href="#basic-installation-instructions"><span class="octicon octicon-link"></span></a>Basic Installation Instructions:</h3>
+<a name="basic-installation-instructions" class="anchor" href="#basic-installation-instructions"><span class="octicon octicon-link"></span></a>Basic Installation</h3>
 
 <p>In order to use and run EUDAQ, we recommend to use <a href="https://github.com/eudaq/eudaq/releases">a stable release!</a></p>
-
-<p>In order to get the latest release version (here e.g. v1.6.0), just follow these steps:</p>
-<pre><code>git clone https://github.com/eudaq/eudaq.git eudaq
-git tag </code></pre>
-List you all releases, with the latest as last one.         
-<pre><code>git checkout v1.6.0
+<p>Donwload the zip file or clone the repository to stay up-todate, just follow these steps:</p>
+<pre><code>git clone https://github.com/eudaq/eudaq.git eudaq </code></pre>
+<p>In order to get the latest release version, list all releases and switch to the latest one (here e.g. v1.6.0):</p>
+<pre><code>git tag 
+git checkout v1.6.0
+</code></pre>
+<p>For installation, execute these steps:</p>
+<pre><code>
 cd eudaq/build
 cmake ..
 make install
@@ -44,38 +46,29 @@ make install
 
 
 <h3>
-<a name="detailed-installation-instructions" class="anchor" href="#detailed-installation-instructions"><span class="octicon octicon-link"></span></a>Detailed Installation Instructions</h3>
+<a name="detailed-installation-instructions" class="anchor" href="#detailed-installation-instructions"><span class="octicon octicon-link"></span></a>Detailed Installation</h3>
 
-<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/master/README.md">README.md file</a> included in the source code, the user's manual (see below), or the <a href="https://github.com/eudaq/eudaq/wiki">EUDAQ wiki pages</a>.</p>
+<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v1.6.0/README.md">README.md</a> included in the source code or in the the user's manual (see below).</p>
 
 <h3>
 <a name="users-manual" class="anchor" href="#users-manual"><span class="octicon octicon-link"></span></a>User's Manual</h3>
 
 <p>You can <a href="http://eudaq.github.io/manual/EUDAQUserManual.pdf">download the user's manual</a> or generate the manual from the LaTeX sources included in EUDAQ:</p>
-
 <pre><code>cd build
 cmake -DBUILD_manual=ON ..
 make pdf
 </code></pre>
-
 <p>The manual can then be found in <code>./doc/manual/EUDAQUserManual.pdf</code></p>
 
 <h3>
 <a name="doxygen-source-code-documentation" class="anchor" href="#doxygen-source-code-documentation"><span class="octicon octicon-link"></span></a>Doxygen Source Code Documentation</h3>
 
 <p>The doxygen documentation of the EUDAQ source code <a href="http://eudaq.github.io/doxygen/index.html">can be found online</a> or generated from the source code itself:</p>
-
 <pre><code>cd build
 cmake ..
 make doxygen
 </code></pre>
-
 <p>The resulting HTML files are stored in <code>../doc/doxygen/html</code>.</p>
-
-<h3>
-<a name="release-notes" class="anchor" href="#release-notes"><span class="octicon octicon-link"></span></a>Release Notes</h3>
-
-<p>You can find the release notes in the <a href="https://github.com/eudaq/eudaq/blob/master/README.release_notes">README.release_notes file</a> in the repository or <a href="http://eudaq.github.io/rel-notes/index.html">online</a>.</p>
 
 <h3>
 <a name="support-and-bug-tracker" class="anchor" href="#support-and-bug-tracker"><span class="octicon octicon-link"></span></a>Support and Bug Tracker</h3>
