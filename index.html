@@ -33,9 +33,9 @@
 <p>In order to use and run EUDAQ, we recommend to use <a href="https://github.com/eudaq/eudaq/releases">a stable release!</a></p>
 <p>Donwload the zip file or clone the repository to stay up-to-date, just follow these steps:</p>
 <pre><code>git clone https://github.com/eudaq/eudaq.git eudaq </code></pre>
-<p>In order to get the latest release version, list all releases and switch to the latest one (here e.g. v1.6.0):</p>
+<p>In order to get the latest release version, list all releases and switch to the latest one (here e.g. v2.0.0):</p>
 <pre><code>git tag 
-git checkout v1.6.0
+git checkout v2.0.0
 </code></pre>
 <p>For installation, execute these steps:</p>
 <pre><code>cd eudaq/build
@@ -47,18 +47,19 @@ make install
 <h3>
 <a name="detailed-installation-instructions" class="anchor" href="#detailed-installation-instructions"><span class="octicon octicon-link"></span></a>Detailed Installation</h3>
 
-<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v1.6.0/README.md">README.md</a> included in the source code or in chpater 3 of the EUDAQ user manual (see below).</p>
+<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v2.0.0/README.md">README.md</a> included in the source code or the EUDAQ user manual (see below).</p>
 
 <h3>
 <a name="users-manual" class="anchor" href="#users-manual"><span class="octicon octicon-link"></span></a>User Manual</h3>
 
 <p>You can generate the pdf manual from the LaTeX sources included in EUDAQ:</p>
 <pre><code>cd build
-cmake -DBUILD_manual=ON ..
+cmake -DEUDAQ_BUILD_MANUAL=ON ..
 make pdf
 </code></pre>
-<p>Afterwards, the manual can then be found in <code>eudaq/build/doc/manual/EUDAQUserManual.pdf</code></p>
-<p>Find here the compiled version of the EUDAQ user manual: <a href="http://eudaq.github.io/manual/EUDAQUserManual.pdf">v1.7</a> or <a href="http://eudaq.github.io/manual/EUDAQUserManual_v2alpha.pdf">v2.0-alpha</a> </p>
+	<p>Afterwards, the manual can then be found in <code>eudaq/build/doc/manual/EUDAQUserManual.pdf</code></p>
+	<p>Find here the compiled version of the EUDAQ user manual: <a href="http://eudaq.github.io/manual/EUDAQUserManual_v2.pdf">v2.0</a>
+	  or <a href="http://eudaq.github.io/manual/EUDAQUserManual_v1.pdf">v1.7</a></p>
         
 <h3>
 <a name="doxygen-source-code-documentation" class="anchor" href="#doxygen-source-code-documentation"><span class="octicon octicon-link"></span></a>Doxygen Source Code Documentation</h3>
