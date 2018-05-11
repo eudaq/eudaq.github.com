@@ -43,15 +43,22 @@ cmake ..
 make install
 </code></pre>
 
-In addition, there are two development branches which are used for new commits:  
-<code>master</code> for version 2 and <code>v1.7-dev</code> for version 1.
-The development for version 1 reduces mainly to bug fixes and anhancements, the development of new functionalities and features will happen on the master-branch.
-
+<p>Detailed installation: Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v2.0.0/README.md">README.md</a> included in the source code or the EUDAQ user manual (see below).</p>
 
 <h3>
-<a name="detailed-installation-instructions" class="anchor" href="#detailed-installation-instructions"><span class="octicon octicon-link"></span></a>Detailed Installation</h3>
+<a name="versions-development" class="anchor" href="#versions-development"><span class="octicon octicon-link"></span></a>Versions and development</h3>
 
-<p>Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/v2.0.0/README.md">README.md</a> included in the source code or the EUDAQ user manual (see below).</p>
+<p>There are two EUDAQ versions: 
+EUDAQ 1 is based on one central data collector providing an event definition by associating one trigger to one read-out of each sub-detector. 
+This comes usually with a TLU providing a global trigger-busy handshake communication.  
+EUDAQ 2 additionally provides distributed data taking by using multiple data collectors. 
+The synchronisation happens by trigger IDs in each data stream or by timestamps provided by a common clock. 
+For this options a TLU has to provide a individual trigger-busy handshake communication or a common clock to the device-DAQs.</p>
+
+<p>There are two development branches which are used for new commits:  
+<code>master</code> for version 2 and <code>v1.7-dev</code> for version 1.
+The development for version 1 reduces mainly to bug fixes and anhancements, the development of new functionalities and features will happen on the master-branch.</p>
+
 
 <h3>
 <a name="users-manual" class="anchor" href="#users-manual"><span class="octicon octicon-link"></span></a>User Manual</h3>
@@ -62,7 +69,7 @@ cmake -DEUDAQ_BUILD_MANUAL=ON ..
 make pdf
 </code></pre>
 	<p>Afterwards, the manual can then be found in <code>eudaq/build/doc/manual/EUDAQUserManual.pdf</code></p>
-	<p>Find here the compiled version of the EUDAQ user manual: <a href="http://eudaq.github.io/manual/EUDAQUserManual_v2_0_1.pdf">v2.0.1</a>
+	<p>Find here the compiled version of the EUDAQ user manual: <a href="http://eudaq.github.io/manual/EUDAQUserManual_v2_0_1.pdf">v2.0</a>
 	  or <a href="http://eudaq.github.io/manual/EUDAQUserManual_v1.pdf">v1.7</a></p>
         
 <h3>
