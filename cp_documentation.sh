@@ -1,2 +1,2 @@
-cp -r ../eudaq/doc/doxygen/html/* doxygen/
-cp ../eudaq/build/doc/manual/EUDAQUserManual.pdf manual/
+cp -r /opt/eudaq/doc/doxygen/html/* doxygen/
+cp /opt/eudaq/doc/manual/EUDAQUserManual.pdf manual/
