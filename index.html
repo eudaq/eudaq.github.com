@@ -33,9 +33,9 @@
 <p>In order to use and run EUDAQ, we recommend to use <a href="https://github.com/eudaq/eudaq/releases">a stable release!</a></p>
 <p>Download the zip file or clone the repository to stay up-to-date, just follow these steps:</p>
 <pre><code>git clone https://github.com/eudaq/eudaq.git eudaq </code></pre>
-<p>In order to get the latest release version, list all releases and switch to the latest one (here e.g. v2.1.0):</p>
+<p>In order to get the latest release version, list all releases and switch to the latest one (here e.g. v2.2.0):</p>
 <pre><code>git tag 
-git checkout v2.1.0
+git checkout v2.2.0
 </code></pre>
 <p>For installation, execute these steps:</p>
 <pre><code>cd eudaq/build
@@ -46,17 +46,16 @@ make install
 <p>Detailed installation: Please have a look at the <a href="https://github.com/eudaq/eudaq/blob/master/README.md">README.md</a> included in the source code or the EUDAQ user manual (see below).</p>
 
 <h3>
-<a name="versions-development" class="anchor" href="#versions-development"><span class="octicon octicon-link"></span></a>Versions and development</h3>
+<a name="versions-development" class="anchor" href="#versions-development"><span class="octicon octicon-link"></span></a>Version 1 and 2 and development</h3>
 
-<p>There are two EUDAQ versions: 
-EUDAQ 1 is based on one central data collector providing an event definition by associating one trigger to one read-out of each sub-detector. 
-This comes usually with a TLU providing a global trigger-busy handshake communication.  
-EUDAQ 2 additionally provides distributed data taking by using multiple data collectors. 
-The synchronisation happens by trigger IDs in each data stream or by timestamps provided by a common clock. 
-For this options a TLU has to provide a individual trigger-busy handshake communication or a common clock to the device-DAQs.</p>
+<p>EUDAQ 1 is based on one central data collector providing an event definition by associating one trigger to one read-out of each sub-detector. 
+This comes with a (EUDET or AIDA) TLU providing a global trigger-busy handshake communication. </p> 
+<p>EUDAQ 2 comes with feature updates: This version additionally provides distributed data taking by using multiple data collectors. 
+The synchronisation can also performed by trigger IDs or by timestamps provided by a common clock. 
+For these new options the TLU has to provide a individual trigger-busy handshake communication or a common clock to the device-DAQs.</p>
 
 <p>There are two development branches which are used for new commits:  
-<code>master</code> for version 2 and <code>v1.7-dev</code> for version 1.
+<code>master</code> for version 2 and <code>v1.x-dev</code> for version 1.
 The development for version 1 reduces mainly to bug fixes and anhancements, the development of new functionalities and features will happen on the master-branch.</p>
 
 
@@ -75,6 +74,7 @@ make pdf
 <h3>
 <a name="doxygen-source-code-documentation" class="anchor" href="#doxygen-source-code-documentation"><span class="octicon octicon-link"></span></a>Doxygen Source Code Documentation</h3>
 
+<p>To be checked/updated for version 2!</p>
 <p>You can generate a html doxygen documentation from the source code itself, which describes the used namespaces, classes and file hierarchy of the EUDAQ code:</p>
 <pre><code>cd build
 cmake ..
